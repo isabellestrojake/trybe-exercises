@@ -1,0 +1,9 @@
+1 - Frango com Catupiry;
+2 - Franbacon;
+3 - Mussarela;
+4 - Pepperoni;
+5 - Mineira;
+6 - Quatro queijos;
+7 - Vegana;
+8 - Marguerita;
+9 - Calabresa;

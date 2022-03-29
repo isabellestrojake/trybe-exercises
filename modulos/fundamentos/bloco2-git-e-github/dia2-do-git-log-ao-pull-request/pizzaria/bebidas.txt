@@ -1,0 +1,4 @@
+1 - Refrigerantes;
+2 - Sucos naturais;
+3 - Água;
+4 - Coquetéis Alcóolicos;
