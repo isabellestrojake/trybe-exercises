@@ -1,49 +1,65 @@
-div:hover {
-  border: solid black
+ol li {
+    background-color: yellow;
 }
 
-div#primária {
-  color: coral;
+ol li.par {
+    color: green;
 }
 
-div#secundária {
-  color: violet;
+ol li.impar {
+    text-transform: uppercase;
+    font-weight: 600;
 }
 
-div#complementar {
-  color: pink;
-  font-size: 2em;
+h1, h3 {
+    color: red;
 }
 
-div#escura {
-  color: darkorchid;
+h1 {
+    font-size: 40px;
+    border: 1px solid black;
 }
 
-div#clara {
-  color: rosybrown;
+li {
+    font-size: 20px;
 }
 
-h3#pri {
-  font-family: Verdana, sans-serif;
-  font-style: italic;
+.três-primeiras {
+    color: blue;
 }
 
-h3#sec {
-  font-family: 'Gill Sans', sans-serif;
-  font-style: oblique;
+.java {
+    background-color: pink;
 }
 
-h3#com {
-  font-family: Arial, serif;
-  font-style: italic;
+ul li:hover {
+    font-weight: 600;
 }
 
-h3#esc {
-  font-family: 'Times New Roman', Times, serif;
-  font-style: oblique;
+ul li#stack:hover {
+    color: orange;
 }
 
-h3#cla {
-  font-family: 'Lucida Sans', sans-serif;
-  font-style: italic;
+ul li#schools:hover {
+    color: green;
+}
+
+ul li#mdn:hover {
+    color: black;
+}
+
+ul li#devdocs:hover {
+    color: yellow;
+}
+
+ul li#trybe:hover{
+    color: green;
+}
+
+a:hover {
+    color: inherit;
+}
+
+a {
+    text-decoration: none;
 }
