@@ -1,15 +1,49 @@
-h1, p {
-  text-align: center;
+div:hover {
+  border: solid black
 }
 
-ol li:hover{
-  background-color: grey;
+div#primária {
+  color: coral;
 }
 
-ol li:active{
+div#secundária {
+  color: violet;
+}
+
+div#complementar {
+  color: pink;
+  font-size: 2em;
+}
+
+div#escura {
+  color: darkorchid;
+}
+
+div#clara {
+  color: rosybrown;
+}
+
+h3#pri {
+  font-family: Verdana, sans-serif;
+  font-style: italic;
+}
+
+h3#sec {
+  font-family: 'Gill Sans', sans-serif;
+  font-style: oblique;
+}
+
+h3#com {
+  font-family: Arial, serif;
+  font-style: italic;
+}
+
+h3#esc {
   font-family: 'Times New Roman', Times, serif;
+  font-style: oblique;
 }
 
-ol, ul {
-  list-style: none;
+h3#cla {
+  font-family: 'Lucida Sans', sans-serif;
+  font-style: italic;
 }
