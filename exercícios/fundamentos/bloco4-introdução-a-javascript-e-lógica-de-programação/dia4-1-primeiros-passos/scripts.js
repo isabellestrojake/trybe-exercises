@@ -1,32 +1,18 @@
-const hour = 17;
-message = "";
+let estado = "aprovada";
 
-if (hour >= 22) {
-  message = "Não deveríamos comer nada, é hora de dormir";
-}
-else if (hour >= 18 && hour < 20) {
-  message = "Rango da noite, vamos jantar :D";
-}
-else if (hour >= 14 && hour < 18) {
-  message = "Vamos fazer um bolo pro café da tarde?";
-}
-else if (hour >= 11 && hour < 14) {
-  message = "Hora do almoço!!!";
-}
-else if (hour >= 4 && hour < 11) {
-  message = "Hmmm, cheiro de café recém passado";
-}
-else {
-  message = "Você está dormindo?";
-}
+switch (estado) {
+  case "aprovada":
+    console.log("Parabéns, você foi aprovado(a)!")
+    break;
 
-console.log(message);
+  case "lista":
+    console.log("Você está em nossa lista de espera.")
+    break;
 
-const weekDay = "domingo";
+  case "reprovada":
+    console.log("Você foi reprovado(a).")
+    break;
 
-if (weekDay === "segunda-feira" || weekDay === "terça-feira" || weekDay === "quarta-feira" || weekDay === "quinta-feira" || weekDay === "sexta-feira") {
-  console.log("Oba, mais um dia de aprendizado na Trybe >:D");
-}
-else {
-  console.log("FINALMENTE, descanso merecido UwU");
+  default:
+    console.log("Não se aplica.")
 }
