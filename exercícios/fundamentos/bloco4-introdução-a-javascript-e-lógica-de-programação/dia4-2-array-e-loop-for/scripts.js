@@ -1,13 +1,5 @@
-let menu = ['Home', 'Serviços', 'Portfólio', 'Links'];
+let groceryList = ['Arroz', 'Feijão', 'Alface', 'Melancia'];
 
-let menuServices = menu.indexOf('Serviços');
-
-let indexOfPortfolio = menu.indexOf('Portfólio');
-
-menu.push('Contato')
-
-console.log(menuServices);
-
-console.log(indexOfPortfolio);
-
-console.log(menu)
+for (let index = 0; index < groceryList.length; index += 1) {
+    console.log(groceryList[index])
+}
