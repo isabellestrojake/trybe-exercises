@@ -35,3 +35,19 @@ for (let index = 0; index < aprendizados.length; index+= 1) {
 
 console.log(maiorPalavra);
 console.log(menorPalavra)
+
+<!-- Maior número primo entre 0 e 50 -->
+let maiorNumeroPrimo = 0;
+
+for (let numeroUsado= 0; numeroUsado <= 50; numeroUsado += 1) {
+    let ehPrimo = true;
+    for (let divisorUsado = 2; divisorUsado < numeroUsado.lenght; divisorUsado +=1) {
+        if ( numeroUsado % divisorUsado === 0) {
+            ehPrimo = falso;
+        }
+    }
+    if (isPrime = true){
+        maiorNumeroPrimo = numeroUsado;
+    }
+}
+console.log(maiorNumeroPrimo)
