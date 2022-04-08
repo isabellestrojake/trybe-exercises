@@ -38,13 +38,16 @@ console.log(menorPalavra)
 
 <!-- Maior número primo entre 0 e 50 -->
 let maiorNumeroPrimo = 0;
+let ehPrimo;
 
-for (let numeroUsado= 0; numeroUsado <= 50; numeroUsado += 1) {
-    let ehPrimo = true;
-    for (let divisorUsado = 2; divisorUsado < numeroUsado.lenght; divisorUsado +=1) {
+for (let numeroUsado = 0; numeroUsado <= 50; numeroUsado += 1) {
+    for (let divisorUsado = 2; divisorUsado <= numeroUsado; divisorUsado +=1) {
         if ( numeroUsado % divisorUsado === 0) {
-            ehPrimo = falso;
+           ehPrimo = false;
         }
+        if (numeroUsado % divisorUsado > 1) {
+            ehPrimo = true;
+    }
     }
     if (isPrime = true){
         maiorNumeroPrimo = numeroUsado;
