@@ -46,7 +46,7 @@ for (let numeroUsado = 0; numeroUsado <= 50; numeroUsado += 1) {
             ehPrimo = true;
     }
     }
-    if (isPrime = true){
+    if (ehPrimo = true){
         maiorNumeroPrimo = numeroUsado;
     }
 }
