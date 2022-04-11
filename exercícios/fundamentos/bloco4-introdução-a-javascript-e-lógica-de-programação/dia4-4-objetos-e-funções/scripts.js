@@ -1,37 +1,63 @@
-let player = {
-    name: 'Marta',
-    lastName: 'Silva',
-    age: 34,
-    medals: {
-        golden: 2,
-        silver: 3
+let info = {
+    personagem: 'Margarida',
+    origem: 'Pato Donald',
+    nota: 'Namorada do personagem principal nos quadrinhos do Pato Donald',
+  };
+
+for (let person in info){
+    console.log('Bem-vinda ' + info.personagem + '.')
+}
+
+info['recorrente'] = 'Sim';
+
+console.log(info)
+
+for (let key in info) {
+    console.log(key);
+}
+
+for (let value in info) {
+    console.log(info[value])
+}
+
+let infoDois = {
+    personagem: 'Tio Patinhas', 
+    origem: 'Christmas on Bear Mountain, Dells Four Color Comics #178', 
+    nota: 'O último MacPatinhas',
+    recorrente: 'Sim'
+  };
+
+  for (let value in info) {
+    if (
+        value === 'recorrente' &&
+        info[value] === 'Sim' &&
+        infoDois[value] === 'Sim'
+      ) {
+        console.log('Ambos recorrentes.');
+      } else {
+        console.log(info[value] + ' e ' + infoDois[value]);
+      }
     }
-}
 
-console.log('A jogadora ' + player.name + ' ' + player.lastName + ' ' + 'tem ' + player.age + ' ' + 'anos de idade.')
+let leitor = {
+    nome: 'Julia',
+    sobrenome: 'Pessoa',
+    idade: 21,
+    livrosFavoritos: [
+        {
+        titulo: 'O Pior Dia de Todos',
+        autor: 'Daniela Kopsch',
+        editora: 'Tordesilhas',
+        },
+    ],
+};
 
-player['bestInTheWorld'] = [2006, 2007, 2008, 2009, 2010, 2018];
+console.log('O livro favorito de ' + leitor.nome + ' ' + leitor.sobrenome + ' é ' + leitor.livrosFavoritos[0].titulo + '.')
 
-console.log('A jogadora ' + player.name + ' ' + player.lastName + ' foi eleita a melhor do mundo por ' + player.bestInTheWorld.length + ' vezes.')
+leitor.livrosFavoritos.push({
+    titulo: 'Harry Potter e o Prisioneiro de Azkaban',
+    autor: 'JK Rowling',
+    editora: 'Rocco',
+}) 
 
-console.log('A jogadora ' + player.name + ' ' + player.lastName + ' possui ' + player.medals.golden + ' medalhas de ouro e ' + player.medals.silver + ' melhadas de prata.')
-
-let names = {
-    person1: 'João',
-    person2: 'Maria',
-    person3: 'Jorge',
-  };
-
-for (let person in names){
-    console.log('Olá, ' + names[person]+ '.')
-}
-
-let car = {
-    model: 'A3 Sedan',
-    manufacturer: 'Audi',
-    year: 2020
-  };
-
-for (let index in car) {
-    console.log(index, car[index]);
-}
+console.log(leitor.nome + ' tem ' + leitor.livrosFavoritos.length + ' livros favoritos.')
