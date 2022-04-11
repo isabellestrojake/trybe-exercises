@@ -42,10 +42,7 @@ let ehPrimo;
 
 for (let numeroUsado = 0; numeroUsado <= 50; numeroUsado += 1) {
     for (let divisorUsado = 2; divisorUsado <= numeroUsado; divisorUsado +=1) {
-        if ( numeroUsado % divisorUsado === 0) {
-           ehPrimo = false;
-        }
-        if (numeroUsado % divisorUsado > 1) {
+        if (numeroUsado % divisorUsado !== 1 && numeroUsado % divisorUsado !== 0) {
             ehPrimo = true;
     }
     }
@@ -54,3 +51,23 @@ for (let numeroUsado = 0; numeroUsado <= 50; numeroUsado += 1) {
     }
 }
 console.log(maiorNumeroPrimo)
+
+<!-- Bônus 1 -->
+let numero = 5;
+let caractere = '*';
+let linha = '';
+
+for (let linhaIndex = 0; linhaIndex < numero; linhaIndex += 1) {
+  linha = linha + caractere;
+}
+for (let linhaIndex = 0; linhaIndex < numero; linhaIndex += 1) {
+  console.log(linha);
+}
+
+<!-- Bônus 2 -->
+let tamanho = 5;
+
+for (let linhaIndex = 0; linhaIndex <= tamanho; linhaIndex += 1) {
+    linha = linha + caractere;
+    console.log(linha);
+}
