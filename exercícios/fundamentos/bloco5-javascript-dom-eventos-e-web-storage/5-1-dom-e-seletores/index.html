@@ -11,20 +11,20 @@
       const paragraph = document.getElementById("paragraph");
       paragraph.style.color = "red";
 
-      const title = document.getElementById('page-title');
+      const title = document.querySelector('#page-title');
       title.innerText = 'Hobbit';
 
-      const secondParagraph = document.getElementById('second-paragraph');
+      const secondParagraph = document.querySelector('#second-paragraph');
       secondParagraph.innerText = 'Uma viagem inesperada';
 
-      const subtitle = document.getElementById('subtitle');
+      const subtitle = document.querySelector('#subtitle');
       subtitle.innerText = 'Desolação de Smaug';
 
-      const paragrafos = document.getElementsByClassName('paragrafo');
-      paragrafos[0].style.fontSize = '15px';
+      const paragrafos = document.querySelectorAll('.paragrafo');
+      paragrafos[0].style.fontSize = '25px';
       paragrafos[0].style.color = 'purple';
 
-      const subtitulo = document.getElementsByTagName('h4')[0];
+      const subtitulo = document.querySelector('h4');
       subtitulo.style.color = 'magenta';
     </script>
   </body>
