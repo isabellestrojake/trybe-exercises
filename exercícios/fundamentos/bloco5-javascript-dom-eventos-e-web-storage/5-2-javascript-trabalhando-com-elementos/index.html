@@ -1,47 +1,143 @@
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<main id="paiDoPai">
-    <section id="pai">
-      <section id="primeiroFilho"></section>
-      <section id="elementoOndeVoceEsta">
-        <section id="primeiroFilhoDoFilho"></section>
-        <section id="segundoEUltimoFilhoDoFilho"></section>
-      </section>
-      Atenção!
-      <section id="terceiroFilho"></section>
-      <section id="quartoEUltimoFilho"></section>
-    </section>
-  </main>
-  <script>
-      /* 1 */
-        const elementoOndeVoceEsta = document.getElementById('elementoOndeVoceEsta');
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Exercício 5.2</title>
+    <style>
+      section {
+        border-color: black;
+        border-style: solid;
+      }
+
+      .title {
+        text-align: center;
+      }
+
+      .main-content {
+        background-color: yellow;
+      }
+
+      .main-content .center-content {
+        background-color: red;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .main-content .center-content p {
+        font-style: italic;
+      }
+
+      .main-content .left-content {
+        background-color: green;
+        width: 60%;
+        margin-left: 0;
+        margin-right: auto;
+      }
+
+      .main-content .left-content .small-image {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 100%;
+      }
+
+      .main-content .right-content {
+        background-color: blue;
+        width: 60%;
+        margin-left: auto;
+        margin-right: 0;
+      }
+
+      .main-content .description {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+    /* Parte 1 - 1 */
+    const titulo1 = document.createElement('h1');
+        titulo1.innerText = 'Exercício 5.2 - JavaScript DOM';
+        document.body.appendChild(titulo1);
 
     /* 2 */
-        let pai = elementoOndeVoceEsta.parentElement;
-        pai.style.color = 'red';
+        const principal = document.createElement('main');
+        principal.className = 'main-content';
+        document.body.appendChild(principal);
 
     /* 3 */
-        const primeiroFilhoDoFilho = elementoOndeVoceEsta.firstElementChild;
-        primeiroFilhoDoFilho.innerText = "Hello World!";
+        const secao1 = document.createElement('section');
+        secao1.className = 'center-content';
+        main.appendChild(secao1);
 
     /* 4 */
-        const primeiroFilho = pai.firstElementChild;
+        const paragrafo1 = document.createElement('p');
+        paragrafo1.innerHTML = 'nananananananananana nananananannna anana nanan ananan';
+        secao1.appendChild(paragrafo1);
 
     /* 5 */
-        const primeiroFilho2 = elementoOndeVoceEsta.previousElementSibling;
+        const secao2 = document.createElement('section');
+        secao2.className = 'left-content';
+        main.appendChild(secao2);
 
     /* 6 */
-        const elementoTexto = elementoOndeVoceEsta.nextSibling;
+        const secao3 = document.createElement('section');
+        secao3.className = 'right-content';
+        main.appendChild(secao3);
 
     /* 7 */
-        const terceiroFilho = elementoOndeVoceEsta.nextElementSibling;
+        const imagem1 = document.createElement('img');
+        imagem1.className = 'small-image';
+        imagem1.src = 'https://picsum.photos/200';
+        secao3.appendChild(imagem1);
 
     /* 8 */
-        const terceiroFilho2 = elementoOndeVoceEsta.previousElementSibling;
-  </script>
-  </html>
+        const lista1 = document.createElement('ul');
+        secao3.appendChild(lista1);
+        const numeros = ['Um', 'Dois', 'Três', 'Quatro', 'Cinco', 'Seis',
+        'Sete', 'Oito', 'Nove', 'Dez'];
+
+        for (let num in numeros) {
+            const elementoLista = document.createElement('li');
+            elementoLista.innerHTML = numeros[num];
+            lista1.appendChild(elementLi);
+        }
+
+    /* 9 */
+        for (let index = 1; index <= 3; index += 1) {
+            const titulo3 = document.createElement('h3');
+            titulo3.innerHTML = 'Show ' + index;
+            principal.appendChild(titulo3);
+        }
+
+    /* Parte 2 - 1 */
+        const titulo = document.querySelector('h1');
+        titulo.className = 'title';
+
+    /* 2 */
+        const titulo3 = document.getElementsByTagName('h3');
+
+        for (let index = 0; index < 3; index += 1) {
+            titulo3[index].className = 'description'; 
+        }
+
+    /* 3 */
+        const secao2 = document.getElementsByClassName('left-content')[0];
+        principal.removeChild(secao2);
+
+    /* 4 */
+        const secao3 = document.getElementsByClassName('right-content')[0];
+        secao3.style.marginRight = 'auto';
+
+    /* 5 */
+        const secao1 = document.getElementsByClassName('center-content')[0];
+        secao1.parentNode.style.backgroundColor = 'green';
+
+    /* 6 */
+        ul.lastChild.remove();
+        ul.lastChild.remove();
+    </script>
+  </body>
+</html>
