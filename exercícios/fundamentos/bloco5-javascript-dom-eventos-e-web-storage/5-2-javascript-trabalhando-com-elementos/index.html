@@ -20,26 +20,17 @@
     </section>
   </main>
   <script>
-    /* 1 */
         const pai = document.getElementById('pai');
-        const irmaoElementoOndeVoceEsta = document.createElement('section');
-        irmaoElementoOndeVoceEsta.id = 'irmaoElementoOndeVoceEsta';
-        pai.appendChild(irmaoElementoOndeVoceEsta);
+        
+        for (let index = pai.childNodes.lenght-1; index >= o; index -= 1 ) {
+            const currentChildren = pai.childNodes[index];
+            if (currentChildren.id !== 'elementoOndeVoceEsta') {
+                currentChildren.remove();
+            }
+        }
 
-    /* 2 */
-        const elementoOndeVoceEsta = document.getElementById('elementoOndeVoceEsta');
-        const filhoElementoOndeVoceEsta = document.createElement('section');
-        filhoElementoOndeVoceEsta.id = 'filhoElementoOndeVoceEsta';
-        elementoOndeVoceEsta.appendChild('filhoElementoOndeVoceEsta');
-
-    /* 3 */
-        const primeiroFilhoDoFilho = document.getElementById('primeiroFilhoDoFilho');
-        const filhoPrimeiroFilhoDoFilho = document.create('section');
-        filhoPrimeiroFilhoDoFilho.id =  'filhoPrimeiroFilhoDoFilho';
-        primeiroFilhoDoFilho.appendChild('filhoPrimeiroFilhoDoFilho');
-
-    /* 4 */
-        const terceiroFilho = filhoPrimeiroFilhoDoFilho.parentElement.parentElement.nextElementSibling;
-        console.log(terceiroFilho);
+        const segundoEUltimoFilho = document.getElementById('segundoEUltimoFilhoDoFilho');
+        segundoEUltimoFilho.remove();
   </script>
+  </body>
   </html>
