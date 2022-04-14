@@ -57,7 +57,7 @@
   </head>
   <body>
     <script>
-    /* 1 */
+    /* Parte 1 - 1 */
     const titulo1 = document.createElement('h1');
         titulo1.innerText = 'Exercício 5.2 - JavaScript DOM';
         document.body.appendChild(titulo1);
@@ -111,6 +111,33 @@
             titulo3.innerHTML = 'Show ' + index;
             principal.appendChild(titulo3);
         }
+
+    /* Parte 2 - 1 */
+        const titulo = document.querySelector('h1');
+        titulo.className = 'title';
+
+    /* 2 */
+        const titulo3 = document.getElementsByTagName('h3');
+
+        for (let index = 0; index < 3; index += 1) {
+            titulo3[index].className = 'description'; 
+        }
+
+    /* 3 */
+        const secao2 = document.getElementsByClassName('left-content')[0];
+        principal.removeChild(secao2);
+
+    /* 4 */
+        const secao3 = document.getElementsByClassName('right-content')[0];
+        secao3.style.marginRight = 'auto';
+
+    /* 5 */
+        const secao1 = document.getElementsByClassName('center-content')[0];
+        secao1.parentNode.style.backgroundColor = 'green';
+
+    /* 6 */
+        ul.lastChild.remove();
+        ul.lastChild.remove();
     </script>
   </body>
 </html>
