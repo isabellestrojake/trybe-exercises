@@ -89,3 +89,23 @@ displayHolidays();
   buttonContainer.appendChild(newButton);
 }
 createFridayButton('Sexta-feira');
+
+// 5 //
+  function displayFridays() {
+    let getFridayButton = document.querySelector('#btn-friday');
+    let getFridays = document.querySelectorAll('.Friday-day')
+    let backgroundColor = 'rgb(238,238,238)';
+    let setNewColor = 'blue';
+
+    getFridayButton.addEventListener('click', function() {
+      for (let index = 0; index < getFridays.length; index += 1) {
+        if (getFridays[index].style.backgroundColor === setNewColor) {
+          getFridays[index].style.backgroundColor = backgroundColor;
+        } else {
+          getFridays[index].style.backgroundColor = setNewColor;
+        }
+      }
+    })
+  };
+
+displayFridays();
