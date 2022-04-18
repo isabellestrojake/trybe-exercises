@@ -77,3 +77,15 @@ createDaysOfTheWeek();
   };
 
 displayHolidays();
+
+// 4 //
+  function createFridayButton(buttonFriday) {
+  let buttonContainer = document.querySelector('.buttons-container');
+  let newButton = document.createElement('button');
+  let newButtonID = 'btn-friday';
+
+  newButton.innerHTML = buttonFriday;
+  newButton.id = newButtonID;
+  buttonContainer.appendChild(newButton);
+}
+createFridayButton('Sexta-feira');
