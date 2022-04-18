@@ -142,3 +142,15 @@ displayFridays();
   }
 
 createNewTask('Mimar o neném');
+
+// 8 //
+  function newTaskColor(color) {
+    let tasks = document.querySelector('.my-tasks');
+    let newTask = document.createElement('div');
+
+    newTask.className = 'task';
+    newTask.style.backgroundColor = color;
+    tasks.appendChild(newTask);
+  };
+
+newTaskColor('violet');
