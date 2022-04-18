@@ -190,3 +190,32 @@ setTask();
   };
 
 taskDayColor();
+
+// Bônus //
+  function myAppointments() {
+    let appointments = document.querySelector('#task-input');
+    let addAppointmentsButton = document.querySelector('#btn-add');
+    let getTaskList = document.querySelector('.task-list');
+
+    addAppointmentsButton.addEventListener('click', function() {
+      if (appointments.value.length > 0) {
+        let newList = document.createElement('li');
+        newList.innerText = appointments.value;
+        getTaskList.appendChild(newList);
+        appointments.value = '';
+      } else {
+        alert('Erro: digite algum compromisso.');
+      }
+    });
+
+    appointments.addEventListener('keyup', function(event) {
+      if (event.key === 'Enter' && appointments.value.length > 0) {
+        let newList = document.createElement('li');
+        newList.innerText = appointments.value;
+        getTaskList.appendChild(newList);
+        appointments.value = '';
+      }
+    });
+  }
+
+myAppointments();
