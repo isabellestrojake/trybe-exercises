@@ -154,3 +154,19 @@ createNewTask('Mimar o neném');
   };
 
 newTaskColor('violet');
+
+// 9 //
+  function setTask() {
+    let selectedTask = document.getElementsByClassName('task selected');
+    let myTask = document.querySelector('.task');
+
+    myTask.addEventListener('click', function(event) {
+      if (selectedTask.length === 0) {
+        event.target.className = 'task selected';
+      } else {
+        event.target.className = 'task';
+      }
+    });
+  }
+
+setTask();
