@@ -57,3 +57,23 @@ createDaysOfTheWeek();
       buttonContainer.appendChild(newButton);
     }
   createHolidayButton('Feriados');
+
+// 3 //
+  function displayHolidays() {
+    let getHolidayButton = document.querySelector('#btn-holiday');
+    let getHolidays = document.querySelectorAll('.Holiday')
+    let backgroundColor = 'rgb(238,238,238)';
+    let setNewColor = 'red';
+
+    getHolidayButton.addEventListener('click', function() {
+      for (let index = 0; index < getHolidays.length; index += 1) {
+        if (getHolidays[index].style.backgroundColor === setNewColor) {
+          getHolidays[index].style.backgroundColor = backgroundColor;
+        } else {
+          getHolidays[index].style.backgroundColor = setNewColor;
+        }
+      }
+    })
+  };
+
+displayHolidays();
