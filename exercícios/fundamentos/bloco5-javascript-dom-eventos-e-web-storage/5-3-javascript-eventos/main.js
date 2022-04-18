@@ -131,3 +131,14 @@ displayFridays();
 
   dayMouseOver();
   dayMouseOut();
+
+// 7 //
+  function createNewTask(task) {
+    let tasks = document.querySelector('.my-tasks');
+    let taskName = document.createElement('span');
+
+    taskName.innerHTML = task;
+    tasks.appendChild(taskName);
+  }
+
+createNewTask('Mimar o neném');
