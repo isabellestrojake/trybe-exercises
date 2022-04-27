@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Viagem da Trybe</title>
+</head>
+<body>
+  <form>
+    <fieldset>
+    <label for="nome-completo">Nome Completo:
+      <input type="text" name="nome" id="input-nome" placeholder="Digite seu nome completo" required minlength="10" maxlength="40">
+    </label>
+    <br>
+    <br>
+    <label for="email">Seu e-mail:
+      <input type="email" name="email" id="input-email" placeholder="Digite seu e-mail" required minlength="10" maxlength="50">
+    </label>
+    <p>Escolha seu destino:</p>
+    <label for="destino1">Cidade</label>
+      <input type="radio" id="destino1" name="destino" value="cid" required>
+    <label for="destino2">Campo</label>
+      <input type="radio" id="destino2" name="destino" value="cam" required>
+    <label for="destino3">Praia</label>
+      <input type="radio" id="destino3" name="destino" value="pra" required>
+    <label for="destino4">Montanhas</label>
+      <input type="radio" id="destino4" name="destino" value="mon" required>
+    <br>
+    <label for="motivo">Por que você deveria ser a pessoa desenvolvedora a ganhar o concurso TrybeTrip?</label>
+    <br>
+    <textarea name="motivo" id="motivo" cols="80" rows="10" placeholder="Digite seu motivo aqui"></textarea>
+    <br>
+    <label for="data">Qual a melhor data para realizar sua viagem?</label>
+    <input type="date" id="data">
+    <br>
+    <br>
+    <label for="newsletter">
+      <input type="checkbox" id="newsletter">Gostaria de receber outras incríveis oportunidades oferecidas pela Trybe?
+    </label>
+    <br>
+    <label for="autorizacao">
+      <input type="checkbox" name="autorizacao" id="autorizacao" required>Concordo que imagens das minhas férias poderão ser usadas na divulgação de concursos futuros.
+    </label>
+    <br>
+    <br>
+    <button type="submit" id="submit" disabled>Enviar formulário</button>
+    <button type="button" id="limpar">Apagar informações</button>
+    </fieldset>
+  </form>
+  <script src="script.js"></script>
+</body>
+</html>
