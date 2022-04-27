@@ -44,10 +44,10 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online e aborda 
 - [x] 5-1: _JavaScript - DOM e seletores_
 - [x] 5-2: _JavaScript - Trabalhando com elementos_
 - [x] 5-3: _JavaScript - Eventos_
-- [ ] 5-4: _JavaScript - Web Storage_
-- [ ] 5-5: _Fundamentos - JavaScript - Projetos_
-- [ ] 5-5: _Projeto_
-- [ ] 5-6: _Projeto_
+- [x] 5-4: _JavaScript - Web Storage_
+- [x] 5-5: _Fundamentos - JavaScript - Projetos_
+- [x] 5-5: _Projeto - Pixels Art_
+- [x] 5-7: _(Bônus)Projeto - To Do List_
 - [ ] 5-7: _(Bônus)Projeto_
 - [ ] 5-7: _(Bônus)Projeto_
 - [ ] 5-7: _(Bônus)Projeto_
@@ -55,8 +55,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online e aborda 
 
 ##### Bloco 6: Introdução - Front-end
 
-- [ ] 6-1: _HTML & CSS - Forms_
-- [ ] 6-2: _Bibliotecas JavaScript e Frameworks CSS_
+- [x] 6-1: _HTML & CSS - Forms_
 - [ ] 6-2: _Bibliotecas JavaScript e Frameworks CSS_
 - [ ] 6-3: _Introdução CSS Flexbox_
 - [ ] 6-3: _CSS Flexbox - Parte 1_
