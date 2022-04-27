@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/pikaday/css/pikaday.css">
+  <link rel="stylesheet" href="style.css">
+  <title>Viagem da Trybe</title>
+</head>
+<body>
+  <form>
+    <fieldset>
+      <div class="field">
+    <label for="nome-completo" class="label">Nome Completo:
+      <div class="control">
+      <input type="text" name="nome" id="input-nome" placeholder="Digite seu nome completo" required>
+    </div>
+    </label>
+  </div>
+  <div class="field">
+    <label for="email" class="label">Seu e-mail:
+      <div class="control">
+      <input type="email" name="email" id="input-email" placeholder="Digite seu e-mail" required>
+    </div>
+    </label>
+  </div>
+    <p class="label">Escolha seu destino:</p>
+    <label for="destino1">Cidade</label>
+      <input type="radio" class="radio" name="destino" value="cid" required>
+    <label for="destino2">Campo</label>
+      <input type="radio" class="radio" name="destino" value="cam" required>
+    <label for="destino3">Praia</label>
+      <input type="radio" class="radio" name="destino" value="pra" required>
+    <label for="destino4">Montanhas</label>
+      <input type="radio" class="radio" name="destino" value="mon" required>
+    <br>
+    <br>
+    <label for="motivo" class="label">Por que você deveria ser a pessoa desenvolvedora a ganhar o concurso TrybeTrip?</label>
+    <br>
+    <textarea name="motivo" id="motivo" cols="60" rows="10" placeholder="Digite seu motivo aqui"></textarea>
+    <br>
+    <br>
+    <label for="data" class="label">Qual a melhor data para realizar sua viagem?</label>
+    <input type="text" id="datepicker">
+    <br>
+    <br>
+    <label for="newsletter">
+      <input type="checkbox" class="checkbox" id="newsletter">Gostaria de receber outras incríveis oportunidades oferecidas pela Trybe?
+    </label>
+    <br>
+    <label for="autorizacao">
+      <input type="checkbox" class="checkbox" name="autorizacao" id="autorizacao" required>Concordo que imagens das minhas férias poderão ser usadas na divulgação de concursos futuros.
+    </label>
+    <br>
+    <br>
+    <button type="submit" class="button" id="submit" disabled><span>Enviar formulário</span></button>
+    <button type="button" class="button" id="limpar"><span>Apagar informações</span></button>
+    </fieldset>
+  </form>
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/pikaday/pikaday.js"></script>
+  <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js"></script>
+</body>
+</html>
