@@ -96,3 +96,6 @@ window.onload = function() {
 
     initialize();
 }
+
+document.getElementsByClassName('options')
+console.log(options)
