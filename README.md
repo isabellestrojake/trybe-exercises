@@ -47,10 +47,10 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online e aborda 
 - [x] 5-4: _JavaScript - Web Storage_
 - [x] 5-5: _Fundamentos - JavaScript - Projetos_
 - [x] 5-5: _Projeto - Pixels Art_
-- [x] 5-7: _(Bônus)Projeto - To Do List_
-- [ ] 5-7: _(Bônus)Projeto_
-- [ ] 5-7: _(Bônus)Projeto_
-- [ ] 5-7: _(Bônus)Projeto_
+- [x] 5-6: _(Bônus)Projeto - To Do List_
+- [ ] 5-6: _(Bônus)Projeto_
+- [ ] 5-6: _(Bônus)Projeto_
+- [ ] 5-6: _(Bônus)Projeto_
 
 
 ##### Bloco 6: Introdução - Front-end
