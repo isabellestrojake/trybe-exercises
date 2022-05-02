@@ -40,3 +40,59 @@ h3:hover {
   color: aliceblue;
   cursor: pointer;
 }
+
+.text-section {
+  justify-content: center;
+  display: flex;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+p {
+  color: darkgrey;
+  font-size: 15px;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 10px auto 10px auto;
+  width: 50%;
+}
+
+.gallery-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: azure;
+  border-radius: 15px;
+  box-shadow: 2px 2px lightblue;
+  flex-direction: column;
+  height: 200px;
+  margin: 0 10px 15px 0;
+  width: 180px;
+}
+
+.gallery-card:hover {
+  box-shadow: 0 0 1px lightblue;
+  transition-duration: 0.3s;
+  transition-property: transform;
+}
+
+h4 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: lightseagreen;
+}
+
+hr {
+  margin-top: 10px;
+  width: 25%;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
