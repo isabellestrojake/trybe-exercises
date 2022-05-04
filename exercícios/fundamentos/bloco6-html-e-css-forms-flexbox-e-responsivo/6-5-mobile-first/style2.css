@@ -15,7 +15,7 @@ nav ul{
 }
 
 .aside-one {
-  font-size: .9em;
+  font-size: .8em;
 }
 
 .aside-two{
@@ -63,5 +63,15 @@ h2 {
 
   .container {
     flex-wrap: wrap;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  body {
+    background-color: lightskyblue;
+  }
+
+  .container {
+    flex-wrap: nowrap;
   }
 }
