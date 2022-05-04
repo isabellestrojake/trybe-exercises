@@ -15,7 +15,7 @@ nav ul{
 }
 
 .aside-one {
-  font-size: .8em;
+  font-size: .9em;
 }
 
 .aside-two{
@@ -53,5 +53,15 @@ h2 {
   p {
     padding: 0 7px;
     line-height: 1.4em;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  body {
+    background-color: lightgrey;
+  }
+
+  .container {
+    flex-wrap: wrap;
   }
 }
