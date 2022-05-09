@@ -1,58 +1,62 @@
-const order = {
-  name: 'Rafael Andrade',
-  phoneNumber: '11-98763-1416',
-  address: {
-    street: 'Rua das Flores',
-    number: '389',
-    apartment: '701',
-  },
-  order: {
-    pizza: {
-      marguerita: {
-        amount: 1,
-        price: 25,
-      },
-      pepperoni: {
-        amount: 1,
-        price: 20,
-      }
-    },
-    drinks: {
-      coke: {
-        type: 'Coca-Cola Zero',
-        price: 10,
-        amount: 1,
-      }
-    },
-    delivery: {
-      deliveryPerson: 'Ana Silveira',
-      price: 5,
-    }
-  },
-  payment: {
-    total: 60,
-  },
+const lesson1 = {
+  materia: 'Matemática',
+  numeroEstudantes: 20,
+  professor: 'Maria Clara',
+  turno: 'manhã',
 };
 
-const customerInfo = (order) => {
-  const address = 'address';
-  const deliveryPerson = order.order.delivery.deliveryPerson;
-  const customerName = order['name'];
-  const customerPhone = order['phoneNumber'];
-  const street = order[address].street;
-  const number = order[address].number;
-  const apartment = order[address].apartment;
+const lesson2 = {
+  materia: 'História',
+  numeroEstudantes: 20,
+  professor: 'Carlos',
+};
 
-  console.log(`Olá, ${deliveryPerson}, entrega para: ${customerName}, Telefone: ${customerPhone}, Endereço: R. ${street}, Nº: ${number}, AP: ${apartment}.`);
+const lesson3 = {
+  materia: 'Matemática',
+  numeroEstudantes: 10,
+  professor: 'Maria Clara',
+  turno: 'noite',
+};
+
+const novaChave = (obj, key, value) => {
+  obj[key] = value;
 }
-customerInfo(order);
+novaChave(lesson2, 'turno', 'noite');
 
-const orderModifier = (order) => {
-  const newBuyer = order.name = 'Luiz Silva';
-  const pizzas = Object.keys(order.order.pizza);
-  const drinks = order.order.drinks.coke.type;
-  const newTotal = order.payment.total = '50';
+const listaChave = (obj) => Object.keys(obj);
+console.log(listaChave(lesson1));
 
-  console.log(`Olá, ${newBuyer}, o total de seu pedido *** ${drinks}, ${pizzas[0]} e ${pizzas[1]} *** é de ${newTotal},00.`);
+const tamanhoObj = (obj) => Object.keys(obj).length;
+console.log(tamanhoObj(lesson1));
+
+const listaValores = (obj) => Object.values(obj);
+console.log(listaValores(lesson1));
+
+const allLessons = Object.assign({}, { lesson1, lesson2, lesson3});
+console.log(allLessons);
+
+const quantDeAlunos = (obj) => {
+  let total = 0;
+  const array = Object.keys(obj);
+  
+  for (index in array) {
+    total += obj[array[index]].numeroEstudantes;;
+  }
+  return total;
+};
+console.log(quantDeAlunos(allLessons));
+
+const pegarValorPorNumero = (obj, number) => Object.values(obj)[number];
+console.log(pegarValorPorNumero(lesson2, 3));
+
+const verificarPares = (obj, key, value) => {
+  const array = Object.entries(obj);
+  let ehIgual = false;
+
+  for(let index in array) {
+    if(array[index][0] === key && array[index][1] === value)
+    ehIgual = true;
+  }
+  return ehIgual;
 }
-orderModifier(order);
+console.log(verificarPares(lesson3, 'numeroEstudantes', 10));
