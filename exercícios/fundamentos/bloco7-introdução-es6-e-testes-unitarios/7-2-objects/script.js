@@ -60,3 +60,40 @@ const verificarPares = (obj, key, value) => {
   return ehIgual;
 }
 console.log(verificarPares(lesson3, 'numeroEstudantes', 10));
+
+// Bônus 
+
+const quantAlunosEmMatematica = (obj) => {
+  let total = 0;
+  const array = Object.keys(obj);
+
+  for(index in array) {
+    if(obj[array[index]].materia ===  'Matemática') {
+      total += obj[array[index]].numeroEstudantes;
+    }
+    return total;
+  }
+}
+console.log(quantAlunosEmMatematica(allLessons));
+
+const profInfo = (obj, name) => {
+  const allLessons = [];
+  let allStudent = 0;
+  const array = Object.values(obj);
+
+  for(index in array) {
+    if(array[index].professor === name) {
+      allLessons.push(array[index].materia);
+      allStudent += array[index].numeroEstudantes;
+    }
+  }
+  return { lessons: allLessons, estudantes: allStudent };
+}
+
+const criarInforme = (allLessons, name) => {
+  const informe = {};
+  informe.professor = name;
+  Object.assign(informe, profInfo(allLessons, name));
+  return informe;
+}
+console.log(criarInforme(allLessons, 'Carlos'));
