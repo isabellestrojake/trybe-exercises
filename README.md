@@ -68,11 +68,11 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online e aborda 
 - [x] 7-1: _JavaScript ES6 - let, const, arrow functions e template literals_
 - [x] 7-2: _JavaScript ES6 - Fluxo de exceção e Objetos_
 - [x] 7-3: _Primeiros passos em Jest_
-- [ ] 7-4: _Projeto_
+- [x] 7-4: _Projeto - Testes Unitários em Jest_
 
 ##### Bloco 8: High Order Functions do JavaScript ES6
 
-- [ ] 8-1: _JavaScript ES6 - Introdução a Higher Order Functions
+- [x] 8-1: _JavaScript ES6 - Introdução a Higher Order Functions
 - [ ] 8-2: _JavaScript ES6 - Higher Order Functions - forEach, find, filter, some, every, sort_
 - [ ] 8-3: _JavaScript ES6 - map e filter_
 - [ ] 8-4: _JavaScript ES6 - reduce_
