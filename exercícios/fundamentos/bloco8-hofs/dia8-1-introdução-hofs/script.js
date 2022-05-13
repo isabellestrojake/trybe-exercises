@@ -1,4 +1,4 @@
-const employGenerator = (fullName) => {
+/*const employGenerator = (fullName) => {
   const email = fullName.toLowerCase().split(' ').join('_');
   return {fullName, email: `${email}@trybe.com` };
 };
@@ -11,4 +11,13 @@ const newEmployees = (callback) => {
   }
   return employees;
 };
-console.log(newEmployees(employGenerator));
+console.log(newEmployees(employGenerator));*/
+
+const verificaNumero = (meuNumero, numero) => meuNumero === numero;
+
+const resultadoLoteria = (meuNumero, callback) => {
+  const numero = Math.floor((Math.random() * 5) + 1);
+
+  return callback(meuNumero, numero) ? 'Dia de sorte, você ganhou!' : 'Não foi dessa vez...';
+}
+console.log(resultadoLoteria(5, verificaNumero));
