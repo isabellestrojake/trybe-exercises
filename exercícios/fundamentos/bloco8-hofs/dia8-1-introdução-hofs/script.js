@@ -22,7 +22,7 @@ const resultadoLoteria = (meuNumero, callback) => {
 }
 console.log(resultadoLoteria(5, verificaNumero));*/
 
-const RIGHT_ANSWERS = ['A', 'C', 'B', 'D', 'A', 'A', 'D', 'A', 'D', 'C'];
+/*const RIGHT_ANSWERS = ['A', 'C', 'B', 'D', 'A', 'A', 'D', 'A', 'D', 'C'];
 const STUDENT_ANSWERS = ['A', 'N.A', 'B', 'D', 'A', 'C', 'N.A', 'A', 'D', 'B'];
 
 const compare = (rightAnswer, studentAnswer) => {
@@ -43,4 +43,88 @@ const pontos = (rightAnswers, studentAnswers, action) => {
   }
   return `Resultado Final: ${contador} pontos.`
 }
-console.log(pontos(RIGHT_ANSWERS, STUDENT_ANSWERS, compare));
+console.log(pontos(RIGHT_ANSWERS, STUDENT_ANSWERS, compare));*/
+
+const mage = {
+  healthPoints: 130,
+  intelligence: 45,
+  mana: 125,
+  damage: undefined,
+};
+
+const warrior = {
+  healthPoints: 200,
+  strength: 30,
+  weaponDmg: 2,
+  damage: undefined,
+};
+
+const dragon = {
+  healthPoints: 350,
+  strength: 50,
+  damage: undefined,
+};
+
+const battleMembers = { mage, warrior, dragon };
+
+const dragonAtk = (dragon) => {
+  const danoMin = 15;
+  const danoDrg = Math.floor((Math.random() * (dragon.strength - danoMin + 1) + danoMin));
+
+  return danoDrg;
+}
+
+const warriorAtk = (warrior) => {
+  const danoMin = warrior.strength;
+  const danoMax = danoMin * warrior.weaponDmg;
+  const danoWarrior = Math.floor((Math.random() * (danoMax - danoMin + 1) + danoMin));
+
+  return danoWarrior;
+}
+
+const mageElemAtk = (mage) => {
+  const mana = mage.mana;
+  const danoMgMin = mage.intelligence;
+  const danoMgMax = danoMgMin * 2;
+  const statusTurno = {
+    manaGasta: 0,
+    danoDesferido: 'Mana insuficiente...',
+  };
+
+  if (mana > 15) {
+    const mageMgDmg = Math.floor((Math.random() * (danoMgMax - danoMgMin + 1) + danoMgMin));
+    statusTurno.manaGasta = 15;
+    statusTurno.danoDesferido = mageMgDmg;
+    return statusTurno;
+  }
+  return statusTurno;
+}
+
+const gameActions = {
+  turnoWarrior: (warriorAtk) => {
+    const warriorDmg = warriorAtk(warrior);
+    warrior.damage = warriorDmg;
+    dragon.healthPoints -= warriorDmg;
+  },
+
+  turnoMago: (mageElemAtk) => {
+    const inicioTurnoMago = mageElemAtk(mage);
+    const mageDmg = inicioTurnoMago.danoDesferido;
+    mage.damage = mageDmg;
+    mage.mana -= inicioTurnoMago.manaGasta;
+    dragon.healthPoints -= mageDmg;
+  },
+
+  turnoDragao: (dragonAtk) => {
+    const dragonDmg = dragonAtk(dragon);
+    mage.healthPoints -= dragonDmg;
+    warrior.healthPoints -= dragonDmg;
+    dragon.damage = dragonDmg;
+  },
+
+  resultadoTurno: () => battleMembers,
+};
+gameActions.turnoWarrior(warriorAtk);
+gameActions.turnoMago(mageElemAtk);
+gameActions.turnoDragao(dragonAtk);
+console.log(gameActions.resultadoTurno());
