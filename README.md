@@ -77,7 +77,9 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online e aborda 
 - [x] 8-3: _JavaScript ES6 - map e filter_
 - [x] 8-4: _JavaScript ES6 - reduce_
 - [x] 8-5: _JavaScript ES6 - spread operator, parâmetro rest, destructuring e mais_
-- [ ] 8-6:_Projeto_
+- [x] 8-6:_Projeto - Zoo Functions_
+
+## Desenvolvimento Front-end
 
 ##### Bloco 9: JavaScript e Testes Assíncronos
 
@@ -85,8 +87,6 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online e aborda 
 - [ ] 9-2: _JavaScript Assíncrono - Fetch API e async/await_
 - [ ] 9-3: _Jest - Testes Assíncronos_
 - [ ] 9-4: _Projeto_
-
-## Desenvolvimento Front-end
 
 ##### Bloco 10: Introdução a React
 
