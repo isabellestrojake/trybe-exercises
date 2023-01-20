@@ -163,17 +163,17 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online e aborda 
 
 - [x] 4-1: _Runtime Assíncrono_
 - [x] 4-2: _API Rest com Express_
-- [ ] 4-3: _Testes de Integração_
-- [ ] 4-4: _Express e Middlewares_
-- [ ] 4-5: _Express e MySQL_
-- [ ] 4-6: _Projeto - Talker Manager_
+- [x] 4-3: _Testes de Integração_
+- [x] 4-4: _Express e Middlewares_
+- [x] 4-5: _Express e MySQL_
+- [x] 4-6: _Projeto - Talker Manager_
 
 ##### Seção 5: Arquitetura de Software: Model, Service e Controller
 
-- [ ] 5-1: _Camada Model_
-- [ ] 5-2: _Camada Service_
-- [ ] 5-3: _Camada Controller_
-- [ ] 5-4: _Projeto - Store Manager_
+- [x] 5-1: _Camada Model_
+- [x] 5-2: _Camada Service_
+- [x] 5-3: _Camada Controller_
+- [x] 5-4: _Projeto - Store Manager_
 
 ##### Seção 6: NodeJS: ORM e Autenticação
 
