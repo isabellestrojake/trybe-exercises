@@ -177,41 +177,41 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online e aborda 
 
 ##### Seção 6: NodeJS: ORM e Autenticação
 
-- [ ] 6-1: _ORM - Interface da aplicação com o banco de dados_
-- [ ] 6-2: _ORM - Associations 1:1 e 1:N_
-- [ ] 6-3: _ORM - Association N:N e Transactions_
-- [ ] 6-4: _JWT (JSON Web Token)_
-- [ ] 6-5: _Projeto - API de Blogs_
+- [x] 6-1: _ORM - Interface da aplicação com o banco de dados_
+- [x] 6-2: _ORM - Associations 1:1 e 1:N_
+- [x] 6-3: _ORM - Association N:N e Transactions_
+- [x] 6-4: _JWT (JSON Web Token)_
+- [x] 6-5: _Projeto - API de Blogs_
 
 ##### Seção 7: MasterClass: Implantação de Aplicações na Nuvem
 
-- [ ] 7-1: _Infraestrutura - Deploy com Railway_
+- [x] 7-1: _Infraestrutura - Deploy com Railway_
 
 ##### Seção 8: Introdução a TypeScript
 
-- [ ] 8-1: _Introdução a TypeScript_
-- [ ] 8-2: _Tipagem Estática e Generics_
-- [ ] 8-3: _Express com TypeScript_
-- [ ] 8-4: _Projeto - TrybeSmith_
+- [x] 8-1: _Introdução a TypeScript_
+- [x] 8-2: _Tipagem Estática e Generics_
+- [x] 8-3: _Express com TypeScript_
+- [x] 8-4: _Projeto - TrybeSmith_
 
 ##### Seção 9: Programação Orientada a Objetos (POO) e SOLID
 
-- [ ] 9-1: _Introdução à Orientação a Objetos_
-- [ ] 9-2: _Herança e Composição_
-- [ ] 9-3: _Polimorfismo_
-- [ ] 9-4: _SOLID - Introdução e Princípios S, O e D_
-- [ ] 9-5: _Princípios L e I_
-- [ ] 9-6: _Projeto - Trybers And Dragons_
+- [x] 9-1: _Introdução à Orientação a Objetos_
+- [x] 9-2: _Herança e Composição_
+- [x] 9-3: _Polimorfismo_
+- [x] 9-4: _SOLID - Introdução e Princípios S, O e D_
+- [x] 9-5: _Princípios L e I_
+- [x] 9-6: _Projeto - Trybers And Dragons_
 
 ##### Seção 10: Projeto TFC - Trybe Futebol Clube
 
-- [ ] 10-1: _Projeto - TFC Trybe Futebol Clube_
+- [x] 10-1: _Projeto - TFC Trybe Futebol Clube_
 
 ##### Seção 11: Introdução a MongoDB
 
-- [ ] 11-1: _MongoDB - Introdução_
-- [ ] 11-2: _Filter Operators_
-- [ ] 11-3: _Operadores de consulta_
+- [x] 11-1: _MongoDB - Introdução_
+- [x] 11-2: _Filter Operators_
+- [x] 11-3: _Operadores de consulta_
 - [ ] 11-4: _Updates Simples_
 - [ ] 11-5: _Updates Complexos - Arrays_
 - [ ] 11-6: _Projeto - Commerce_
