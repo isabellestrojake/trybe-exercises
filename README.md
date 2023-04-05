@@ -212,27 +212,27 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online e aborda 
 - [x] 11-1: _MongoDB - Introdução_
 - [x] 11-2: _Filter Operators_
 - [x] 11-3: _Operadores de consulta_
-- [ ] 11-4: _Updates Simples_
-- [ ] 11-5: _Updates Complexos - Arrays_
-- [ ] 11-6: _Projeto - Commerce_
+- [x] 11-4: _Updates Simples_
+- [x] 11-5: _Updates Complexos - Arrays_
+- [x] 11-6: _Projeto - Commerce_
 
 
 
 ##### Seção 12: APIs OO e NoSQL
 
-- [ ] 12-1: _APIs orientadas a Ojbetos e NoSQL: POO e ODMs_
-- [ ] 12-2: _APIs orientadas a Ojbetos e NoSQL: Herança e Abstração_
-- [ ] 12-3: _Projeto - Car Shop_
+- [x] 12-1: _APIs orientadas a Ojbetos e NoSQL: POO e ODMs_
+- [x] 12-2: _APIs orientadas a Ojbetos e NoSQL: Herança e Abstração_
+- [x] 12-3: _Projeto - Car Shop_
 
 ##### Seção 13: Projeto App de Delivery
 
-- [ ] 13-1: _Projeto - App de Delivery_ 
+- [x] 13-1: _Projeto - App de Delivery_ 
 
 ## Ciência da Computação
 
 ##### Seção 1: Introdução a Python
 
-- [ ] 1-1: _Aprendendo Python_
+- [x] 1-1: _Aprendendo Python_
 - [ ] 1-2: _Entrada e Saída de Dados_
 - [ ] 1-3: _Testes_
 - [ ] 1-4: _Projeto - Job Insights_
