@@ -233,7 +233,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online e aborda 
 ##### Seção 1: Introdução a Python
 
 - [x] 1-1: _Aprendendo Python_
-- [ ] 1-2: _Entrada e Saída de Dados_
+- [x] 1-2: _Entrada e Saída de Dados_
 - [ ] 1-3: _Testes_
 - [ ] 1-4: _Projeto - Job Insights_
 
