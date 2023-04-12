@@ -234,7 +234,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online e aborda 
 
 - [x] 1-1: _Aprendendo Python_
 - [x] 1-2: _Entrada e Saída de Dados_
-- [ ] 1-3: _Testes_
+- [x] 1-3: _Testes_
 - [ ] 1-4: _Projeto - Job Insights_
 
 ##### Seção 2: Padrões de Projeto
