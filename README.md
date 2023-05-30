@@ -235,42 +235,44 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online e aborda 
 - [x] 1-1: _Aprendendo Python_
 - [x] 1-2: _Entrada e Saída de Dados_
 - [x] 1-3: _Testes_
-- [ ] 1-4: _Projeto - Job Insights_
+- [x] 1-4: _Projeto - Job Insights_
 
 ##### Seção 2: Padrões de Projeto
 
-- [ ] 2-1: _POO em Python_
-- [ ] 2-2: _Padrões - Iterator, Adapter, Strategy_
-- [ ] 2-3: _Padrões - Decorator, Observer, Factory_
-- [ ] 2-4: _Projeto - Relatórios de Estoque_
+- [x] 2-1: _POO em Python_
+- [x] 2-2: _Padrões - Iterator, Adapter, Strategy_
+- [x] 2-3: _Padrões - Decorator, Observer, Factory_
+- [x] 2-4: _Projeto - Relatórios de Estoque_
 
 ##### Seção 3: Redes e Raspagem de Dados
 
-- [ ] 3-1: _Arquitetura de redes_
-- [ ] 3-2: _Raspagem de Dados_
-- [ ] 3-3: _Outras Ferramentas de Raspagem de Dados_
-- [ ] 3-4: _Projeto - Tech News_
+- [x] 3-1: _Arquitetura de redes_
+- [x] 3-2: _Raspagem de Dados_
+- [x] 3-3: _Outras Ferramentas de Raspagem de Dados_
+- [ ] 3-4: _Projeto Bônus - Tech News_
 
 ##### Seção 4: Algoritmos
 
-- [ ] 4-1: _Complexidade de Algoritmos_
-- [ ] 4-2: _Recursividade e Estratégias para Solução de Problemas_
-- [ ] 4-3: _Algoritmos de Ordenação e Busca_
-- [ ] 4-4: _Projeto - Algoritmos_
+- [x] 4-1: _Complexidade de Algoritmos_
+- [x] 4-2: _Recursividade e Estratégias para Solução de Problemas_
+- [x] 4-3: _Algoritmos de Ordenação e Busca_
+- [x] 4-4: _Projeto - Algoritmos_
 
 ##### Seção 5: Estrutura de Dados I: Arrays, Listas, Filas e Pilhas
 
-- [ ] 5-1: _Arquitetura de Computadores_
-- [ ] 5-2: _Arrays_
-- [ ] 5-3: _Nó e Listas Encadeadas_
-- [ ] 5-4: _Pilhas e Filas_
-- [ ] 5-5: _Projeto - TING Trybe Is Not Google_
+- [x] 5-1: _Arquitetura de Computadores_
+- [x] 5-2: _Arquitetura de Redes_
+- [x] 5-3: _Arrays_
+- [x] 5-4: _Nó e Listas Encadeadas_
+- [x] 5-5: _Pilhas e Filas_
+- [ ] 5-6: _Projeto - TING Trybe Is Not Google_
 
 ##### Seção 6: Estrutura de Dados II: Hashmaps e Sets
 
-- [ ] 6-1: _Hashmap e Dict_
-- [ ] 6-2: _Set_
-- [ ] 6-3: _Projeto - Restaurant Orders_
+- [x] 6-1: _Hashmap e Dict_
+- [x] 6-2: _Set_
+- [x] 6-3: _Pandas_
+- [ ] 6-4: _Projeto - Restaurant Orders_
 
 # [...]
 
